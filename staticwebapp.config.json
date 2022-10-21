@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    },
+    {
       "route": "/*",
       "allowedRoles": [ "authenticated" ]
 
@@ -10,11 +14,8 @@
       //"rewrite": "/.auth/login/okta",
       //"allowedRoles": [ "authenticated" ]
 
-    },
-    {
-      "route": "/logout",
-      "redirect": "/.auth/logout"
     }
+
   ],
 
   "responseOverrides": {
