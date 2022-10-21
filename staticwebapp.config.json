@@ -1,26 +1,17 @@
 {
   "routes": [
- 
     {
       "route": "/*",
       "allowedRoles": [ "authenticated" ]
-
-      //"route": "/authenticated/*",
-      //"allowedRoles": [ "authenticated" ]
-      //"route": "/login",
-      //"rewrite": "/.auth/login/okta",
-      //"allowedRoles": [ "authenticated" ]
-
     }
-
   ],
-
   "responseOverrides": {
     "401": {
-      "redirect": "/.auth/login/okta",
-      "statusCode": 302
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad"
     }
   },
+
   //"auth": {
   //  "identityProviders": {
   //    "azureActiveDirectory": {
