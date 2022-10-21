@@ -6,7 +6,7 @@
     },
     {
       "route": "/logout",
-      "redirect": "/.auth/logout",
+      "redirect": "/.auth/logout"
    
     },
     {
