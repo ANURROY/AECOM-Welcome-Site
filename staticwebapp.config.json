@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/logout",
-      "redirect": "/.auth/logout",
+      "redirect": "/.auth/logout/okta",
       "allowedRoles": [ "authenticated" ]
     },
     {
