@@ -1,11 +1,11 @@
 {
   "routes": [
  
-    {
-      "route": "/logout",
-      "redirect": "/.auth/logout"
+    //{
+    //  "route": "/logout",
+    //  "redirect": "/.auth/logout"
    
-    },
+    //},
     {
       "route": "/*",
       "allowedRoles": [ "authenticated" ]
