@@ -1,9 +1,13 @@
 {
   "routes": [
     {
+      "route": "/login",
+      "rewrite": "/.auth/login/okta"
+    },
+    {
       "route": "/logout",
-      "redirect": "/.auth/logout/okta",
-      "allowedRoles": [ "authenticated" ]
+      "redirect": "/.auth/logout",
+   
     },
     {
       "route": "/*",
