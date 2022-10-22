@@ -7,8 +7,8 @@
              $("#Save").click(function () {
                  var person = new Object();
 				 debugger;
-				 person.Description = $('#Description').val();
-                 //person.surname = $('#surname').val();
+                 person.Description = $('#Description').val();
+                 alert(person.Description);
                  $.ajax({
 					 url: 'https://yellow-bush-0c4260510.2.azurestaticapps.net/api/task',
                      type: 'POST',
@@ -30,7 +30,7 @@
 <body>
     <form id="form1">
         Description :- <input type="text" name="Description" id="Description" />
-        <!--Surname:- <input type="text" name="surname" id="surname" />-->
+    
         <input type="button" id="Save" value="Save Data" />
     </form>
 </body>
