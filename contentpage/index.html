@@ -1,22 +1,46 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authenticated</title>
-    <style>
+	<style>
+		@font-face {
+			font-family: 'AECOMSans_XBd';
+			src: url(fonts/AECOMSans_XBd.ttf) format('truetype');
+		}
+
+		@font-face {
+			font-family: 'AECOMSans_Rg';
+			src: url(fonts/AECOMSans_Rg.ttf) format('truetype');
+		}
+
+		h1 {
+			font-family: AECOMScans_XBd;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Authenticated</title>
+	<style>
 		body {
 			background-color: #009a9b;
 		}
-    </style>
+	</style>
 </head>
 <body>
 	<!--<h1>Authenticated : AllJ authenticated users can access this page.</h1>-->
-	
-	<div>
+	<!--<div>-->
+	<!--<a href="/.auth/login/aad">Login</a> | <a href="/.auth/logout">Logout</a>-->
+	<!-- <a href="/.auth/login/aad">Azure Active Directory Login</a>  | <a href="/.auth/login/github">GitHub Login</a> | <a href="/.auth/login/okta">Okta Login</a> | <a href="/.auth/logout">Logout</a>-->
+	<!--<a href="/.auth/logout/okta" style="font-family:AECOMSans_Rg;color:white">Logout</a>
+	</div>-->
+
+	<h1>AECOM New Employee Portal </h1>
+	<div style="width:800px; margin:0 auto;">
 		<!--<a href="/.auth/login/aad">Login</a> | <a href="/.auth/logout">Logout</a>-->
 		<!-- <a href="/.auth/login/aad">Azure Active Directory Login</a>  | <a href="/.auth/login/github">GitHub Login</a> | <a href="/.auth/login/okta">Okta Login</a> | <a href="/.auth/logout">Logout</a>-->
-    <a href="/.auth/logout/okta" style="font-family:AECOMSans_Rg;color:white">Logout</a>
+		<!-- <a href="/.auth/login/okta?post_login_redirect_uri=https://nice-ground-064540210.1.azurestaticapps.net/authenticated/index.html">Login</a> | <a href="/.auth/logout">Logout</a>-->
+		<a href="/index.html" style="font-family:AECOMSans_Rg;color:white">Home</a> | <a href="https://aecomext.okta.com/login/signout?fromURI=https://yellow-bush-0c4260510.2.azurestaticapps.net" style="font-family:AECOMSans_Rg;color:white">Logout</a>
 	</div>
 	<div class="container">
 		<button type="button" class="btn skilheaderDivBtn pop ga-onWelcomeSection" title="" id="btnEdit" style="font-family:AECOMSans_Rg;color:black;text-align:left">Edit Page Content</button>
