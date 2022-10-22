@@ -6,6 +6,7 @@
          $(document).ready(function () {
              $("#Save").click(function () {
                  var person = new Object();
+				 debugger;
 				 person.Description = $('#Description').val();
                  //person.surname = $('#surname').val();
                  $.ajax({
@@ -13,7 +14,9 @@
                      type: 'POST',
                      dataType: 'json',
                      data: person,
+					 
                      success: function (data, textStatus, xhr) {
+						 debugger;
                          console.log(data);
                      },
                      error: function (xhr, textStatus, errorThrown) {
