@@ -22,7 +22,7 @@
                     type: 'POST',
                     dataType: 'json',
                     contentType: "application/json; charset=utf-8",
-                    data: person,
+                    data: JSON.stringify(person),
 
                     success: function (data, textStatus, xhr) {
                         debugger;
